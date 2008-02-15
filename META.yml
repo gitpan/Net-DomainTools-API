@@ -1,0 +1,29 @@
+---
+name: Net-DomainTools-API
+version: 0.08
+author:
+  - 'David Bartle <captindave@gmail.com>'
+abstract: Interface with domaintools.com XML API
+license: perl
+requires:
+  LWP::UserAgent: 0
+  URI::Escape: 0
+  XML::Simple: 0
+build_requires:
+  HTTP::Request: 0
+  LWP::UserAgent: 0
+  Test::Simple: 0.44
+  URI::Escape: 0
+  XML::Simple: 0
+  YAML: 0
+provides:
+  Net::DomainTools::API:
+    file: lib/Net/DomainTools/API.pm
+    version: 0.08
+  Net::DomainTools::API::NameSpinner:
+    file: lib/Net/DomainTools/API/NameSpinner.pm
+    version: 0.02
+  Net::DomainTools::API::SearchEngine:
+    file: lib/Net/DomainTools/API/SearchEngine.pm
+    version: 0.03
+generated_by: Module::Build version 0.26

@@ -1,0 +1,14 @@
+Build.PL
+Changes
+lib/Net/DomainTools/API.pm
+lib/Net/DomainTools/API/NameSpinner.pm
+lib/Net/DomainTools/API/SearchEngine.pm
+LICENSE
+Makefile.PL
+MANIFEST			This list of files
+META.yml
+README
+t/001_load.t
+t/002_search_engine.t
+t/003_name_spinner.t
+t/license.yml

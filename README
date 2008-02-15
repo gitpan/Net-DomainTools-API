@@ -1,0 +1,44 @@
+NAME
+    Net::DomainTools::API - Base class for the Domain Tools API
+
+SYNOPSIS
+     use base qw( Net::DomainTools::API );
+
+     sub _init {
+        my( $self ) = @_;
+        ${ $self->{default_params} }{'application'} = 'search_engine';
+     };
+
+DESCRIPTION
+    This is a base class for the Domain Tools API. It should not be used
+    directly.
+
+    Subclasses will typically want to override things in the
+    'default_params' hash.
+
+    Items in this hash will be passed in as default values to the HTTP
+    request and will be overridden if the same key is passed into the
+    request() method.
+
+SEE ALSO
+    Net::DomainTools::API::SearchEngine, Net::DomainTools::API::*
+
+BUGS
+    Please report bugs using the CPAN Request Tracker at
+    <http://rt.cpan.org/>
+
+AUTHOR
+    David Bartle <captindave@gmail.com>
+
+COPYRIGHT
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+    I am not affiliated with Domain Tools or Name Intelligence. The use of
+    their API's are governed by their own terms of service:
+
+    http://www.domaintools.com/members/tos.html
+
+    The full text of the license can be found in the LICENSE file included
+    with this module.
+
